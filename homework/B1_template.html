@@ -1,0 +1,22 @@
+<script>
+
+	let phones = ["Apple", "Samsung", "Nokia", "Meizu", "Xiaomi", "Huawei", "Sony", "LG", "ASUS"];
+	
+	phones = phones.map(item => ({ 
+						title: item, 
+						price: Math.round(Math.random()*1000 + 10)+' $'
+					}));
+	
+	document.write("<h2>Before sort</h2>");	
+	document.write(JSON.stringify(phones).replace(/},/g, '},<br>'));
+	
+	//Start Write Code Here!
+	
+		
+	
+	//End Of Your!
+	
+	document.write("<h2>After sort</h2>");	
+	document.write(JSON.stringify(phones).replace(/},/g, '},<br>'));
+
+</script>
